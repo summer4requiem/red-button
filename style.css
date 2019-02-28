@@ -1,0 +1,20 @@
+html,
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+.theButton {
+  position: absolute;
+  top: 242px;
+  left: 560px;
+  background-color: red;
+  width: 228px;
+  height: 228px;
+  border-radius: 50%;
+  border: none;
+  font-size: 49px;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 20px 0 0 #901;
+}
