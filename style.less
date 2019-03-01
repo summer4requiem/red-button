@@ -4,19 +4,26 @@ body {
     box-sizing: border-box;
 }
 
-.theButton {
+button {
     position: absolute;
-    top: 242px;
-    left: 560px;
-    background-color: red;
-    width: 228px;
-    height: 228px;
+    top: 50%;
+    left: 50%;
+    background-color: #c21114;
+    width: 220px;
+    height: 190px;
     border-radius: 50%;
     border: none;
-    font-size: 49px;
+    font-size: 37px;
+    text-align: center;
     color: white;
     cursor: pointer;
     outline: none;
     box-shadow: 0 20px 0 0 #901;
-   
+    transition: all 150ms ease-out;
+    margin: -95px 0 0 -110px;
+  
 }
+button:active {
+    margin-top: -85px;
+    box-shadow: 0 15px 0 0 #900;
+  }
