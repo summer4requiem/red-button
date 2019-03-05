@@ -15,8 +15,40 @@
 
     <button> старт</button>
 
+    <div class="container">
+        <label class="checkbox">
+            <input type="checkbox">
+            <span></span>
+        </label>
+        <label class="checkbox">
+            <input type="checkbox" checked>
+            <span></span>
+        </label>
+        <label class="checkbox">
+            <input type="checkbox" disabled>
+            <span></span>
+        </label>
+        <label class="checkbox">
+            <input type="checkbox" checked disabled>
+            <span></span>
+        </label>
+        <label class="checkbox">
+            <input type="checkbox">
+            <span></span>
+        </label>
+        <label class="checkbox">
+            <input type="checkbox">
+            <span></span>
+        </label>
+    </div>
 
+    <script>
+        document.querySelector('button').addEventListener('click', function () {
+            alert(' Окич , я сообщение')
+        })
+    </script>
 
 </body>
+
 
 </html>

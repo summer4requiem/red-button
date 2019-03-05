@@ -21,9 +21,59 @@ button {
     box-shadow: 0 20px 0 0 #901;
     transition: all 150ms ease-out;
     margin: -95px 0 0 -110px;
-  
 }
+
 button:active {
     margin-top: -90px;
     box-shadow: 0 15px 0 0 #900;
-  }
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.checkbox {
+    display: block;
+    position: relative;
+    margin: 0 0 10px 0;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    input[type="checkbox"] {
+        .visually-hidden;
+        &:checked+span {
+            background-image: data-uri('./check.svg');
+        }
+        &:disabled+span {
+            border-style: dotted;
+        }
+        &:focus+span {
+            box-shadow: 0 0 5px #900;
+        }
+    }
+    span {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        border: 2px solid black;
+        background: center center no-repeat;
+        background-size: contain;
+    }
+}
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+    -webkit-appearance: none;
+}
